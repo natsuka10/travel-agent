@@ -1,6 +1,6 @@
 @extends('frontend.layout')
 @section('content')
-<div class="destination_banner_wrap overlay">
+<div class="destination_banner_wrap overlay" style="background-image: url({{Storage::url($destination->image)}})">
     <div class="destination_text text-center">
       <h3>{{$destination->kota}}</h3>
       <p>{{$destination->provinsi}}</p>

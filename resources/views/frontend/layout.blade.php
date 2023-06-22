@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Travelo</title>
+    <title>Travelgo</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -102,7 +102,7 @@
                 <div class="footer_widget">
                   <div class="footer_logo">
                     <a href="#">
-                      <img src="img/footer_logo.png" alt="" />
+                      <img src="{{asset('frontend/img/logo-pemweb.png')}}" width="100px" alt="" />
                     </a>
                   </div>
                   <p>

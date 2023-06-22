@@ -8,16 +8,16 @@
           style="background-image: url({{Storage::url($slider->image) }})"
           class="single_slider d-flex align-items-center overlay"
         >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-xl-12 col-md-12">
-                <div class="slider_text text-center">
-                  <h3>{{$slider->judul}}</h3>
-                  <p>{{$slider->subjudul}}</p>
-                </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12 col-md-12">
+              <div class="slider_text text-center">
+                <h3>{{$slider->judul}}</h3>
+                <p>{{$slider->subjudul}}</p>
               </div>
             </div>
           </div>
+        </div>
         </div>
           @endforeach
         </div>
