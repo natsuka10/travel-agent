@@ -13,8 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
+Route::get('/about', function () {
+    return view('frontend.about');
+});
+Route::get('/destinasi', function () {
+    return view('frontend.destinasi.index');
+});
+Route::get('/destinasi/detail', function () {
+    return view('frontend.destinasi.detail');
+});
+Route::get('/contact', function () {
+    return view('frontend.contact');
 });
 
 Auth::routes();
@@ -28,4 +38,5 @@ Route::group(['middleware' => 'isAdmin','prefix' => 'admin', 'as' => 'admin.'], 
     Route::resource('users', \App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
 });
