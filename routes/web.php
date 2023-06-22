@@ -14,19 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
+Route::get('/home', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
 Route::get('/about', function () {
     return view('frontend.about');
 });
-Route::get('/destinasi', function () {
-    return view('frontend.destinasi.index');
-});
-Route::get('destinasi/{destination:kota}', [\App\Http\Controllers\DetailController::class,'show'])->name('destination.show');
+// Route::get('/destinasi', function () {
+//     return view('frontend.destinasi.index');
+// });
+Route::Get('/destinasi',[\App\Http\Controllers\DetailController::class,'index'])->name('destination.index');
+Route::get('destinasi/detail/{destination:kota}', [\App\Http\Controllers\DetailController::class,'show'])->name('destination.show');
 Route::get('/destinasi/detail', function () {
     return view('frontend.destinasi.detail');
 });
-Route::get('/contact', function () {
-    return view('frontend.contact');
-});
+// Route::get('/contact', function () {
+//     return view('frontend.contact');
+// });
+Route::Get('/contact',[\App\Http\Controllers\DetailController::class,'testimoni'])->name('testimoni');
 
 Auth::routes();
 
@@ -41,4 +44,5 @@ Route::group(['middleware' => 'isAdmin','prefix' => 'admin', 'as' => 'admin.'], 
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
     Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
     Route::resource('destinations', \App\Http\Controllers\Admin\DestinationController::class);
+    Route::resource('testimonials', \App\Http\Controllers\Admin\TestimonialController::class);
 });

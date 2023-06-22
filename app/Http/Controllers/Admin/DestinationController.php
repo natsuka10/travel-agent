@@ -8,6 +8,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Http\Requests\Admin\DestinationRequest;
+use File;
 
 class DestinationController extends Controller
 {
@@ -15,7 +16,6 @@ class DestinationController extends Controller
     public function index(): View
     {
         $destinations = Destination::get();
-
         return view('admin.destinations.index', compact('destinations'));
     }
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Destination;
+use App\Models\Testimonial;
 
 class HomeController extends Controller
 {
@@ -27,6 +28,7 @@ class HomeController extends Controller
     {
         $sliders = Slider::latest()->get();
         $destinations = Destination::latest()->get();
-        return view('frontend.home',compact('sliders','destinations'));
+        $testimonials = Testimonial::inRandomOrder()->get();
+        return view('frontend.home',compact('sliders','destinations','testimonials'));
     }
 }

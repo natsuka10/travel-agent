@@ -41,7 +41,7 @@
             </li>
             <li class="nav-item">
                 <a href="{{ route('admin.sliders.index') }}" class="nav-link">
-                    <i class="nav-icon fa fa fa-book"></i>
+                    <i class="nav-icon fa fa-images"></i>
                     <p>
                         {{ __('Slider') }}
                     </p>
@@ -52,6 +52,14 @@
                     <i class="nav-icon fa fa-compass"></i>
                     <p>
                         {{ __('Destinasi Wisata') }}
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.testimonials.index') }}" class="nav-link">
+                    <i class="nav-icon fa fa-clipboard"></i>
+                    <p>
+                        {{ __('Testimoni') }}
                     </p>
                 </a>
             </li>

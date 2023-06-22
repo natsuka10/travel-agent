@@ -2,7 +2,7 @@
 @section('content')
 <div class="destination_banner_wrap overlay">
     <div class="destination_text text-center">
-      <h3>{{$destination->city}}</h3>
+      <h3>{{$destination->kota}}</h3>
       <p>{{$destination->provinsi}}</p>
     </div>
   </div>
@@ -24,7 +24,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="submit_btn">
-                    <a href="" class="boxed-btn4 d-block"
+                    <a href="whatsapp://send?text=Saya ingin Booking&phone=+6285155322826" class="boxed-btn4 d-block"
                       ><i class="fa fa-whatsapp"></i> Whatsapp</a
                     >
                   </div>

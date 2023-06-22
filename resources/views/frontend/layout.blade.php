@@ -48,10 +48,10 @@
           <div class="container-fluid">
             <div class="header_bottom_border">
               <div class="row align-items-center">
-                <div class="col-xl-2 col-lg-2">
+                <div class="col-xl-2 col-lg-1">
                   <div class="logo">
-                    <a href="index.html">
-                      <img src="img/logo.png" alt="" />
+                    <a href="/home">
+                      <img src="{{asset('frontend/img/logo-pemweb.png')}}" width="70px" alt="" />
                     </a>
                   </div>
                 </div>
@@ -60,16 +60,16 @@
                     <nav>
                       <ul id="navigation">
                         <li>
-                          <a class="active" href="index.html">home</a>
+                          <a class="" href="/home">home</a>
                         </li>
                         <li>
-                          <a href="about.html">About</a>
+                          <a href="/about">About</a>
                         </li>
                         <li>
-                          <a href="travel_destination.html">Destination</a>
+                          <a href="/destinasi">Destination</a>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <a href="/contact">Contact</a>
                         </li>
                       </ul>
                     </nav>
@@ -79,41 +79,7 @@
                   <div
                     class="social_wrap d-flex align-items-center justify-content-end"
                   >
-                    <div class="number">
-                      <p>
-                        <i class="fa fa-phone"></i>
-                        10(256)-928 256
-                      </p>
-                    </div>
-                    <div class="social_links d-none d-xl-block">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-instagram"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-facebook"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
-                </div>
-                <div class="seach_icon">
-                  <a
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                    href="#"
-                  >
-                    <i class="fa fa-search"></i>
-                  </a>
                 </div>
                 <div class="col-12">
                   <div class="mobile_menu d-block d-lg-none"></div>
@@ -140,93 +106,21 @@
                     </a>
                   </div>
                   <p>
-                    5th flora, 700/D kings road, green <br />
-                    lane New York-1782 <br />
-                    <a href="#">+10 367 826 2567</a> <br />
-                    <a href="#">contact@carpenter.com</a>
+                    Jl. Veteran, Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145<br />
+                    <a href="#">+62 851 5532 2828</a> <br />
+                    <a href="#">travelgo@gmail.com</a>
                   </p>
-                  <div class="socail_links">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="ti-facebook"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-youtube-play"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
               <div class="col-xl-2 col-md-6 col-lg-2">
                 <div class="footer_widget">
-                  <h3 class="footer_title">Company</h3>
+                  <h3 class="footer_title">Navigation</h3>
                   <ul class="links">
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#"> Gallery</a></li>
-                    <li><a href="#"> Contact</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/destinasi"> Gallery</a></li>
+                    <li><a href="/contact">Contact</a></li>
                   </ul>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6 col-lg-3">
-                <div class="footer_widget">
-                  <h3 class="footer_title">Popular destination</h3>
-                  <ul class="links double_links">
-                    <li><a href="#">Indonesia</a></li>
-                    <li><a href="#">America</a></li>
-                    <li><a href="#">India</a></li>
-                    <li><a href="#">Switzerland</a></li>
-                    <li><a href="#">Italy</a></li>
-                    <li><a href="#">Canada</a></li>
-                    <li><a href="#">Franch</a></li>
-                    <li><a href="#">England</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6 col-lg-3">
-                <div class="footer_widget">
-                  <h3 class="footer_title">Instagram</h3>
-                  <div class="instagram_feed">
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/1.png" alt="" />
-                      </a>
-                    </div>
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/2.png" alt="" />
-                      </a>
-                    </div>
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/3.png" alt="" />
-                      </a>
-                    </div>
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/4.png" alt="" />
-                      </a>
-                    </div>
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/5.png" alt="" />
-                      </a>
-                    </div>
-                    <div class="single_insta">
-                      <a href="#">
-                        <img src="img/instagram/6.png" alt="" />
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -243,7 +137,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  All rights reserved | This template is made with
+                  All rights reserved
                   <i class="fa fa-heart-o" aria-hidden="true"></i>
                   by
                   <a href="https://colorlib.com" target="_blank">Colorlib</a>
